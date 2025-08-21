@@ -1,6 +1,6 @@
 // Configuración de la API 
-const API_BASE_URL = 'http://localhost:3000/api'; // Para desarrollo local 
-// const API_BASE_URL = 'https://tu-app.onrender.com/api'; // Para producción 
+//const API_BASE_URL = 'http://localhost:3000/api'; // Para desarrollo local 
+const API_BASE_URL = 'https://mi-aplicacion-vulnerable-tk04.onrender.com'; // Para producción 
  
 // Variables globales 
 let currentUser = null; 
@@ -272,3 +272,4 @@ async function deleteTask(taskId) {
         console.error('Error:', error); 
     } 
 } 
+
