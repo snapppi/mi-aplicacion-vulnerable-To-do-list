@@ -1,0 +1,42 @@
+<!DOCTYPE html> 
+<html lang="es"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Mis Tareas</title> 
+    <link rel="stylesheet" href="style.css"> 
+</head> 
+<body> 
+    <div class="container"> 
+        <div class="header"> 
+            <h1>Mis Tareas</h1> 
+            <div class="user-info"> 
+                <span id="welcomeMessage">Bienvenido, Usuario</span> 
+                <button onclick="logout()" class="logout-btn">Cerrar Sesión</button> 
+            </div> 
+        </div> 
+ 
+        <!-- Formulario para agregar nueva tarea --> 
+        <div class="form-container"> 
+            <h2>Agregar Nueva Tarea</h2> 
+            <form id="taskForm"> 
+                <input type="text" id="taskTitle" placeholder="Título de la tarea" required> 
+                <textarea id="taskDescription" placeholder="Descripción (opcional)"></textarea> 
+                <button type="submit">Agregar Tarea</button> 
+            </form> 
+        </div> 
+ 
+        <!-- Lista de tareas --> 
+        <div class="tasks-container"> 
+            <h2>Mis Tareas</h2> 
+            <div id="tasksList"> 
+                <!-- Las tareas se cargarán aquí con JavaScript --> 
+            </div> 
+        </div> 
+ 
+        <div id="message" class="message"></div> 
+    </div> 
+ 
+    <script src="script.js"></script> 
+</body> 
+</html> 
